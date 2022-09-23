@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --netflixBlack: #000000;
+  --netflixRed: #E50914;
+  --netflixDarkRed: #b20710;
+  --netflixYellow: #ffcc00;
+}
+
 html{
   font-family: 'Muli', sans-serif;
   font-size: 62.5%;
@@ -49,4 +56,49 @@ body{
 
 .nav.visible {
   transform: translate(0);
+}
+
+.nav-black {
+  background-color: var(--netflixBlack);
+  width: 60%;
+  max-width: 48rem;
+  min-width: 32rem;
+}
+
+.nav-red {
+  background-color: var(--netflixRed);
+  width: 95%;
+}
+
+.nav-white {
+  background-color: white;
+  width: 95%;
+  padding: 4rem;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  margin: 2rem 0;
+}
+
+.list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 2rem;
 }
