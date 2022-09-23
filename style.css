@@ -29,7 +29,7 @@ body{
 }
 
 .logo {
-  width: 15rem;
+  width: 20rem;
 }
 
 .nav-btn {
@@ -43,6 +43,10 @@ body{
   position: fixed;
   top: 1rem;
   left: 1rem;
+}
+
+.open-btn:hover {
+  color: var(--netflixRed);
 }
 
 .nav {
@@ -98,6 +102,10 @@ body{
   right: 3rem;
 }
 
+.close-btn:hover {
+  color: var(--netflixRed);
+}
+
 .list {
   list-style-type: none;
 }
@@ -111,6 +119,14 @@ body{
   color: black;
   font-size: 1.4rem;
   text-transform: uppercase;
+}
+
+.list li a:hover {
+  font-size: 1.6rem;
+}
+
+.list li a:active {
+  color: var(--netflixYellow);
 }
 
 .list ul {
