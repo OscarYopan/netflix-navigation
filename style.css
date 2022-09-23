@@ -5,7 +5,7 @@
 }
 
 html{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 62.5%;
 }
 
@@ -15,5 +15,38 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.open-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform .3s ease-in-out;
+}
+
+.nav.visible {
+  transform: translate(0);
 }
